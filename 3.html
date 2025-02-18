@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Ảnh</title>
+    <!-- Liên kết đến Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: shafarik;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .album-container {
+            text-align: center;
+            max-width: 90%;
+            margin: 20px;
+        }
+
+        .album-title {
+            font-weight: bold;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .album-image {
+            width: 300px; 
+            height: 200px; 
+            object-fit: cover; 
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .album-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .album-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="album-container">
+        <!-- Tiêu đề Album -->
+        <div class="album-title"> Khoảng lặng</div>
+
+        <!-- Ảnh album -->
+        <div class="album-grid">
+            <img src="https://i.pinimg.com/736x/e9/9b/02/e99b02c5fdd65057f803c7ffc630db71.jpg" alt="Thiên nhiên 1" class="album-image">
+            <img src="https://i.pinimg.com/736x/46/79/95/4679951e5654a6c02025d2e5f3920a4a.jpg" alt="Thiên nhiên 2" class="album-image">
+            <img src="https://i.pinimg.com/736x/7a/d0/48/7ad0486f5f161059687a9aa53a46ef48.jpg" alt="Thiên nhiên 3" class="album-image">
+            <img src="https://i.pinimg.com/736x/00/aa/bf/00aabffc50b41eef649c3787a48adbcc.jpg" alt="Thiên nhiên 4" class="album-image">
+            <img src="https://i.pinimg.com/736x/18/eb/00/18eb00d4203b9cc581b0d7d97149bfa2.jpg" alt="Thiên nhiên 5" class="album-image">
+            <img src="https://i.pinimg.com/736x/5b/e3/e8/5be3e8bf0e0ee7a1289378162ffa5300.jpg" alt="Thiên nhiên 6" class="album-image">
+        </div>
+    </div>
+
+</body>
+</html>
