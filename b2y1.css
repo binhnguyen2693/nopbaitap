@@ -1,0 +1,100 @@
+body {
+    background-color: white; 
+    color: black; 
+    font-family: 'Arial', sans-serif;
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 60%; 
+    margin: auto; 
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'ArialArial', sans-serif; 
+    font-weight: bold; 
+    text-align: left; 
+    text-align: center;
+    font-size: 38px; 
+    font-weight: bold;
+}
+ 
+
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+img {
+    width: 200%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+.image-container {
+    text-align: center; 
+    width: 90%; 
+    margin: 20px auto;
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.caption {
+    font-size: 18px; 
+    color: gray; 
+    margin-top: 5px;
+    text-align: left;
+}
+.big-first-letter::first-letter {
+    font-size: 50px; 
+    font-weight: bold; 
+    float: left; 
+    margin-right: 5px; 
+    line-height: 1;
+}
+
+.container {
+    width: 7575%;  
+    max-width: 1000px;  
+    margin: 0 auto;  
+    text-align: justify;  
+    padding: 20px; 
+    font-family: 'Roboto', sans-serif;  
+    line-height: 1.6; 
+
+}
+ 
+p {
+    font-size: 16px; 
+    text-align: justify; /
+}
+
+header {
+    text-align: center;
+
+}
+.meta {
+    text-align: center; 
+}
+.underline {
+    display: block;
+    width: 120px;
+    height: 2px;
+    background-color: black;
+    margin: 5px auto 0;
+}
+    

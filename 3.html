@@ -1,81 +1,114 @@
-
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Album Ảnh</title>
-    <!-- Liên kết đến Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: shafarik;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-
-        .album-container {
-            text-align: center;
-            max-width: 90%;
-            margin: 20px;
-        }
-
-        .album-title {
-            font-weight: bold;
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .album-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            justify-items: center;
-            align-items: center;
-        }
-
-        .album-image {
-            width: 300px; 
-            height: 200px; 
-            object-fit: cover; 
-            border-radius: 8px;
-        }
-
-        @media (max-width: 768px) {
-            .album-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .album-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <title>Trần Nguyễn Bình Nguyên</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <style>
+    body, h1, h2, h3, h4, h5, h6 {font-family: "Montserrat", sans-serif;}
+    .w3-row-padding img {margin-bottom: 12px;}
+    .w3-sidebar {width: 120px;background: #222;}
+    #main {margin-left: 120px;}
+    @media only screen and (max-width: 600px) {#main {margin-left: 0;}}
+    
+    /* Thêm CSS cho tiêu đề đen */
+    h2, h3, h4 {
+      color: #000;
+      border-bottom: 2px solid #000;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    
+  </style>
 </head>
-<body>
+<body class="w3-light-grey">
 
-    <div class="album-container">
-        <!-- Tiêu đề Album -->
-        <div class="album-title"> Khoảng lặng</div>
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <img src="https://i.imgur.com/oSDDCOg.jpeg" style="width:50px;hight:50px">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>Trang Chủ</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>Giới Thiệu</p>
+    </a>
+    <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-cogs w3-xxlarge"></i>
+      <p>Kỹ Năng Cải Thiện</p>
+    </a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-briefcase w3-xxlarge"></i>
+      <p>Mục Tiêu Hướng Tới</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>Liên Hệ</p>
+    </a>
+  </nav>
 
-        <!-- Ảnh album -->
-        <div class="album-grid">
-            <img src="https://i.pinimg.com/736x/e9/9b/02/e99b02c5fdd65057f803c7ffc630db71.jpg" alt="Thiên nhiên 1" class="album-image">
-            <img src="https://i.pinimg.com/736x/46/79/95/4679951e5654a6c02025d2e5f3920a4a.jpg" alt="Thiên nhiên 2" class="album-image">
-            <img src="https://i.pinimg.com/736x/7a/d0/48/7ad0486f5f161059687a9aa53a46ef48.jpg" alt="Thiên nhiên 3" class="album-image">
-            <img src="https://i.pinimg.com/736x/00/aa/bf/00aabffc50b41eef649c3787a48adbcc.jpg" alt="Thiên nhiên 4" class="album-image">
-            <img src="https://i.pinimg.com/736x/18/eb/00/18eb00d4203b9cc581b0d7d97149bfa2.jpg" alt="Thiên nhiên 5" class="album-image">
-            <img src="https://i.pinimg.com/736x/5b/e3/e8/5be3e8bf0e0ee7a1289378162ffa5300.jpg" alt="Thiên nhiên 6" class="album-image">
-        </div>
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Trang Chủ</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">Giới Thiệu</a>
+      <a href="#skills" class="w3-bar-item w3-button" style="width:25% !important">Kỹ Năng</a>
+      <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">Dự Án</a>
+    </div>
+  </div>
+
+  <div class="w3-padding-large" id="main">
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 class="w3-jumbo">Trang Giới Thiệu - Trần Nguyễn Bình Nguyên</h1>
+      <p>Sinh viên ngành Công nghệ thông tin</p>
+      <img src="https://i.imgur.com/rCiI5ln.jpeg" alt="Trần Nguyễn Bình Nguyên" class="w3-image" width="992" height="1108">
+    </header>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2>Giới Thiệu</h2>
+      <p>
+       Chào mừng đến với trang cá nhân của tôi! Là sinh viên chuyên ngành Công nghệ thông tin tại Đại học Thủ đô Hà Nội, tôi không chỉ đam mê công nghệ mà còn yêu thích sự sáng tạo. Với niềm đam mê vẽ, tôi luôn tìm cách kết hợp giữa nghệ thuật và công nghệ trong mọi công việc của mình.
+
+Với những nỗ lực không ngừng nghỉ, tôi đang trên hành trình tiến bộ từng ngày, không chỉ trong học tập mà còn trong việc khám phá những lĩnh vực mới như lập trình C, C++, và thiết kế web. Trang web này là một phần trong quá trình phát triển cá nhân của tôi, nơi tôi chia sẻ những sản phẩm sáng tạo, những ý tưởng và cả những hành trình học hỏi của bản thân.
+
+Mong rằng những gì tôi chia sẻ tại đây sẽ truyền cảm hứng cho bạn và giúp chúng ta cùng nhau học hỏi, phát triển và tạo ra những điều mới mẻ trong thế giới công nghệ và sáng tạo!.
+      </p>
     </div>
 
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="skills">
+      <h2>Kỹ Năng Muốn Cải Thiện</h2>
+      <ul>
+        <li>Lập trình C, C++, Java</li>
+        <li>Thiết kế giao diện người dùng (UI/UX)</li>
+        <li>Phát triển ứng dụng web và di động</li>
+        <li>Quản lý dự án và làm việc nhóm</li>
+      </ul>
+    </div>
+
+    <div class="w3-padding-64 w3-content" id="projects">
+     
+      <div class="w3-row-padding">
+        <div class="w3-half">
+          <div class="w3-padding-64 w3-content" id="goals">
+      <h2>Mục Tiêu Hướng Tới </h2>
+      <li><strong>Phát triển kỹ năng lập trình game</strong></li>
+      <p>Học các công cụ và ngôn ngữ lập trình game như Unity, Unreal Engine, C#, để có thể phát triển các trò chơi tương tác hấp dẫn.</p>
+      <div class="w3-row-padding">
+        <li><strong>Thiết kế đồ họa cho game</strong></li>
+         <p>Tạo ra các yếu tố đồ họa cho game, bao gồm nhân vật, cảnh vật, và các yếu tố trực quan khác giúp nâng cao trải nghiệm người chơi.</p>
+        <li><strong>Xây dựng trò chơi thực tế ảo (VR)</strong></li>
+          <p>Tìm hiểu và áp dụng công nghệ VR vào phát triển game để mang lại trải nghiệm mới mẻ và thú vị cho người chơi.</p>
+       
+    <div class="w3-padding-64 w3-content" id="contact">
+      <h2>Liên Hệ</h2>
+      <p>Email: trngbinhnguyen@gmail.com</p>
+      <p>Phone: +84 982 118 529</p>
+    </div>
+  </div>
+  <footer>
+    <a href="index.html">Quay lại</a>
+</footer> 
 </body>
 </html>
+
