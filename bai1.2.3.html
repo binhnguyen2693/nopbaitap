@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 .2 </title>
+    <link rel="stylesheet" href="b1,22.css">
+</head>
+<body>
+    <div class="noidung">
+        <p><a href="baitapbuoi3.html">Quay lại</a></p>
+    <h1 style="color:black">CSS Syntax</h1>
+
+    <div class="cach">
+        <button class="nut" >Previous</button>
+        <button class="nut" >Next</button>
+    </div>
+    <p class="khung">A CSS rule consists of a selector and a declaration block.</p>
+    <h2 style="color:black">CSS Syntax</h2>
+    <img src="https://www.w3schools.com/css/img_selector.gif" alt="anh1">
+    <p>
+        The selector points to the HTML element you want to style.</br>
+
+The declaration block contains one or more declarations separated by semicolons.</br>
+
+Each declaration includes a CSS property name and a value, separated by a colon.</br>
+
+Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</br>
+    </p>
+    <div class="xam">
+        <h4 style="color:black">Example</h4>
+        <p>In this example all <p> elements will be center-aligned, with a red text color:</p>
+        <p class="trangvavien">p { 
+             <span style="color:red">color</span>:<span style="color:blue">red</span>; 
+             <span style="color:red">text-alight</span>:<span style="color:blue">center</span> 
+        }</p>
+        <button class="nut" >Try it Yourself</button>
+        
+    </div>
+    <h3 style="color:black">Example Explained</h3>
+    <div>
+        <p>
+            <li><span style="color:red ">p</span> is a selector in CSS (it points to the HTML element you want to style: <code>&lt;p&gt;</code>).</li>
+            <li><span style="color:red">color</span> is a property, and<span style="color:red">red</span> is the property value</li>
+            <li><span style="color:red">text-align</span> is a property, and <span style="color:red">center</span> is the property value</li>
+        </p>
+ 
+    </div>
+    
+    <p class="hi">You will learn much more about CSS selectors and CSS properties in the next chapters!</p>
+    <div class="btap">
+        <div class="giua">
+            <p style="font-size: 20px;">Exrcise</p>
+            <p>In the following example, which part is the selector?</p>
+            <p style="backgrough-color:rgb(39, 46, 58)" >p { color: red; }</p>
+             <button class="chon">p</button>
+             <button class="chon">{ color: red; }</button>
+             <button class="chon">color</button>
+             <button class="chon">red</button>
+           
+            <button class="nut" >Submit Answer</button>
+       </div>
+
+    </div>
+
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Lên đầu trang">&#8679;</button>
+    <script>
+  
+        const backToTopBtn = document.getElementById("backToTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+</div>
+</body>
+</html>
+    
