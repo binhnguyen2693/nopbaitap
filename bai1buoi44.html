@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 buổi 4</title>
+    <link rel="stylesheet" href="bai1buoi4.css">
+</head>
+<body>
+    <nav class="ngang">
+        <button style="text-align: center;" class="nav-btn left-btn">&lsaquo;</button> <!-- ❮ -->
+        <div class="menu-container">
+            <ul><li><a href="#" onclick="showMenu('html')">HTML</a></li>
+                <li><a href="#" onclick="showMenu('css')">CSS</a></li>
+                <li><a href="#" onclick="showMenu('javascript')">JAVASCRIPT</a></li>
+                <li><a href="#" onclick="showMenu('sql')">SQL</a></li>
+                <li><a href="#" onclick="showMenu('python')">PYTHON</a></li>
+                <li><a href="#" onclick="showMenu('java')">JAVA</a></li>
+                <li><a href="#" onclick="showMenu('php')">PHP</a></li>
+                <li><a href="#" onclick="showMenu('howto')">HOW TO</a></li>
+                <li><a href="#" onclick="showMenu('w3css')">W3.CSS</a></li>
+                <li><a href="#" onclick="showMenu('c')">C</a></li>
+                <li><a href="#" onclick="showMenu('cplusplus')">C++</a></li>
+                <li><a href="#" onclick="showMenu('bootstrap')">BOOTSTRAP</a></li>
+                <li><a href="#" onclick="showMenu('react')">REACT</a></li>
+                <li><a href="#" onclick="showMenu('mysql')">MYSQL</a></li>
+                <li><a href="#" onclick="showMenu('jquery')">JQUERY</a></li>
+                <li><a href="#" onclick="showMenu('excel')">EXCEL</a></li>
+                <li><a href="#" onclick="showMenu('xml')">XML</a></li>
+                <li><a href="#" onclick="showMenu('django')">DJANGO</a></li>
+                <li><a href="#" onclick="showMenu('numpy')">NUMPY</a></li>
+                <li><a href="#" onclick="showMenu('pandas')">PANDAS</a></li>
+                <li><a href="#" onclick="showMenu('nodejs')">NODEJS</a></li>
+                <li><a href="#" onclick="showMenu('dsa')">DSA</a></li>
+                <li><a href="#" onclick="showMenu('typescript')">TYPESCRIPT</a></li>
+                <li><a href="#" onclick="showMenu('angular')">ANGULAR</a></li>
+                <li><a href="#" onclick="showMenu('git')">GIT</a></li>
+                <li><a href="#" onclick="showMenu('postgresql')">POSTGRESQL</a></li>
+                <li><a href="#" onclick="showMenu('mongodb')">MONGODB</a></li>
+                <li><a href="#" onclick="showMenu('asp')">ASP</a></li>
+                <li><a href="#" onclick="showMenu('ai')">AI</a></li>
+                <li><a href="#" onclick="showMenu('r')">R</a></li>
+                <li><a href="#" onclick="showMenu('go')">GO</a></li>
+                <li><a href="#" onclick="showMenu('kotlin')">KOTLIN</a></li>
+                <li><a href="#" onclick="showMenu('sass')">SASS</a></li>
+                <li><a href="#" onclick="showMenu('vue')">VUE</a></li>
+                <li><a href="#" onclick="showMenu('genai')">GEN AI</a></li>
+                <li><a href="#" onclick="showMenu('cybersecurity')">CYBERSECURITY</a></li>
+                <li><a href="#" onclick="showMenu('datascience')">DATA SCIENCE</a></li>
+                
+            </ul>
+        </div>
+        <button style="text-align-last: center;" class="nav-btn right-btn">&rsaquo;</button> <!-- ❯ -->
+    </nav>
+    <aside class="sidebar">
+        <ul id="menu-list" class="submenu"></ul>
+    </aside>
+    
+
+    <script>
+     const menu = {
+         html: [
+         { text: "HTML Tutorial", link: "#", isTitle: true },
+         { text: "HTML HOME", link: "#" },
+         { text: "HTML Introduction", link: "#" },
+         {  text: "HTML Editors", link: "#" },
+         { text: "HTML Basic", link: "#" },
+         { text: "HTML Elements", link: "#" },
+         { text: "HTML Attributes", link: "#" },
+         { text: "HTML Headings", link: "#" },
+         { text: "HTML Paragraphs", link: "#" },
+         { text: "HTML Styles", link: "#" },
+         { text: "HTML Formatting", link: "#" },
+         { text: "HTML Quotations", link: "#" },
+         { text: "HTML Comments", link: "#" },
+         { text: "HTML Colors", link: "#" },
+         { text: "HTML CSS", link: "#" },
+            { text: "HTML Links", link: "#" },
+            { text: "HTML Images", link: "#" },
+            { text: "HTML Favicon", link: "#" },
+            { text: "HTML Page Title", link: "#" },
+            { text: "HTML Tables", link: "#" },
+            { text: "HTML Lists", link: "#" },
+            { text: "HTML Block & Inline", link: "#" },
+            { text: "HTML Div", link: "#" },
+            { text: "HTML Classes", link: "#" },
+            { text: "HTML Id", link: "#" },
+            { text: "HTML Iframes", link: "#" },
+            { text: "HTML JavaScript", link: "#" },
+            { text: "HTML File Paths", link: "#" },
+            { text: "HTML Head", link: "#" },
+            { text: "HTML Layout", link: "#" },
+            { text: "HTML Responsive", link: "#" },
+            { text: "HTML Computercode", link: "#" },
+            { text: "HTML Semantics", link: "#" },
+            { text: "HTML Style Guide", link: "#" },
+            { text: "HTML Entities", link: "#" },
+            { text: "HTML Symbols", link: "#" },
+            { text: "HTML Emojis", link: "#" },
+            { text: "HTML Charsets", link: "#" },
+            { text: "HTML URL Encode", link: "#" },
+            { text: "HTML vs. XHTML", link: "#" },
+
+            { text: "HTML Forms", link: "#", isTitle: true },
+            { text: "HTML Forms", link: "#" },
+            { text: "HTML Form Attributes", link: "#" },
+            { text: "HTML Form Elements", link: "#" },
+            { text: "HTML Input Types", link: "#" },
+            { text: "HTML Input Attributes", link: "#" },
+            { text: "Input Form Attributes", link: "#" },
+
+            { text: "HTML Graphics", link: "#", isTitle: true },
+            { text: "HTML Canvas", link: "#" },
+            { text: "HTML SVG", link: "#" },
+
+            { text: "HTML Media", link: "#", isTitle: true },
+            { text: "HTML Media", link: "#" },
+            { text: "HTML Video", link: "#" },
+            { text: "HTML Audio", link: "#" },
+            { text: "HTML Plug-ins", link: "#" },
+            { text: "HTML YouTube", link: "#" },
+
+            { text: "HTML APIs", link: "#", isTitle: true },
+            { text: "HTML Geolocation", link: "#" },
+            { text: "HTML Drag/Drop", link: "#" },
+            { text: "HTML Web Storage", link: "#" },
+            { text: "HTML Web Workers", link: "#" },
+            { text: "HTML SSE", link: "#" },
+
+            { text: "HTML Examples", link: "#", isTitle: true },
+            { text: "HTML Examples", link: "#" },
+            { text: "HTML Editor", link: "#" },
+            { text: "HTML Quiz", link: "#" },
+            { text: "HTML Exercises", link: "#" },
+            { text: "HTML Website", link: "#" },
+            { text: "HTML Syllabus", link: "#" },
+            { text: "HTML Study Plan", link: "#" },
+            { text: "HTML Interview Prep", link: "#" },
+            { text: "HTML Bootcamp", link: "#" },
+            { text: "HTML Certificate", link: "#" },
+            { text: "HTML Summary", link: "#" },
+            { text: "HTML Accessibility", link: "#" },
+
+            { text: "HTML References", link: "#", isTitle: true },
+            { text: "HTML Tag List", link: "#" },
+            { text: "HTML Attributes", link: "#" },
+            { text: "HTML Global Attributes", link: "#" },
+            { text: "HTML Browser Support", link: "#" },
+            { text: "HTML Events", link: "#" },
+            { text: "HTML Colors", link: "#" },
+            { text: "HTML Canvas", link: "#" },
+            { text: "HTML Audio/Video", link: "#" },
+            { text: "HTML Doctypes", link: "#" },
+            { text: "HTML Character Sets", link: "#" },
+            { text: "HTML URL Encode", link: "#" },
+            { text: "HTML Lang Codes", link: "#" },
+            { text: "HTTP Messages", link: "#" },
+            { text: "HTTP Methods", link: "#" },
+            { text: "PX to EM Converter", link: "#" },
+         { text: "Keyboard Shortcuts", link: "#" }
+        ],
+
+        css: [
+            
+            { text: "CSS HOME", link: "#" },
+            { text: "CSS Introduction", link: "#" },
+            { text: "CSS Syntax", link: "#" },
+            { text: "CSS Selectors", link: "#" },
+            { text: "CSS How To", link: "#" },
+            { text: "CSS Comments", link: "#" },
+            { text: "CSS Colors", link: "#" },
+            { text: "CSS Backgrounds", link: "#" },
+            { text: "CSS Borders", link: "#" },
+            { text: "CSS Margins", link: "#" },
+            { text: "CSS Padding", link: "#" },
+            { text: "CSS Height/Width", link: "#" },
+            { text: "CSS Box Model", link: "#" },
+            { text: "CSS Outline", link: "#" },
+            { text: "CSS Text", link: "#" },
+            { text: "CSS Fonts", link: "#" },
+            { text: "CSS Icons", link: "#" },
+            { text: "CSS Links", link: "#" },
+            { text: "CSS Lists", link: "#" },
+            { text: "CSS Tables", link: "#" },
+            { text: "CSS Display", link: "#" },
+            { text: "CSS Max-width", link: "#" },
+            { text: "CSS Position", link: "#" },
+            { text: "CSS Z-index", link: "#" },
+            { text: "CSS Overflow", link: "#" },
+            { text: "CSS Float", link: "#" },
+            { text: "CSS Inline-block", link: "#" },
+            { text: "CSS Align", link: "#" },
+            { text: "CSS Combinators", link: "#" },
+            { text: "CSS Pseudo-classes", link: "#" },
+            { text: "CSS Pseudo-elements", link: "#" },
+            { text: "CSS Opacity", link: "#" },
+            { text: "CSS Navigation Bar", link: "#" },
+            { text: "CSS Dropdowns", link: "#" },
+            { text: "CSS Image Gallery", link: "#" },
+            { text: "CSS Image Sprites", link: "#" },
+            { text: "CSS Attr Selectors", link: "#" },
+            { text: "CSS Forms", link: "#" },
+            { text: "CSS Counters", link: "#" },
+            { text: "CSS Website Layout", link: "#" },
+            { text: "CSS Units", link: "#" },
+            { text: "CSS Specificity", link: "#" },
+            { text: "CSS !important", link: "#" },
+            { text: "CSS Math Functions", link: "#" }
+     ],
+
+        
+
+        js: [
+            { text: "JavaScript Home", link: "#" },
+            { text: "JavaScript Basics", link: "#" },
+            { text: "JavaScript Functions", link: "#" },
+            { text: "JavaScript Events", link: "#" }
+        ]
+};
+
+
+        function showMenu(type) {
+            const menuList = document.getElementById("menu-list");
+            menuList.innerHTML = ""; 
+
+            menu[type].forEach(item => {
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                if (item.isTitle) {
+            li.className = "menu-title"; 
+            li.textContent = item.text;
+        } else {
+            a.textContent = item.text;
+            a.href = item.link;
+            li.appendChild(a);
+        }
+
+        menuList.appendChild(li);
+    });
+}
+          
+        showMenu("html");
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuContainer = document.querySelector(".menu-container");
+            const leftBtn = document.querySelector(".left-btn");
+            const rightBtn = document.querySelector(".right-btn");
+
+            function checkScroll() {
+                if (menuContainer.scrollLeft <= 0) {
+                    leftBtn.style.display = "none";
+                } else {
+                    leftBtn.style.display = "block"; 
+                }
+
+                if (menuContainer.scrollLeft + menuContainer.clientWidth >= menuContainer.scrollWidth) {
+                    rightBtn.style.display = "none";
+                } else {
+                    rightBtn.style.display = "block"; 
+                }
+            }
+
+            leftBtn.addEventListener("click", () => {
+                menuContainer.scrollLeft -= 150;
+                checkScroll();
+            });
+
+            rightBtn.addEventListener("click", () => {
+                menuContainer.scrollLeft += 150;
+                checkScroll();
+            });
+
+            
+            let isDragging = false;
+            let startX, scrollLeft;
+
+            menuContainer.addEventListener("mousedown", (e) => {
+                isDragging = true;
+                startX = e.pageX - menuContainer.offsetLeft;
+                scrollLeft = menuContainer.scrollLeft;
+                menuContainer.style.cursor = "grabbing";
+                menuContainer.style.scrollBehavior = "auto"; 
+            });
+
+            menuContainer.addEventListener("mousemove", (e) => {
+                if (!isDragging) return;
+                e.preventDefault();
+                const x = e.pageX - menuContainer.offsetLeft;
+                const walk = (x - startX) * 2;
+                menuContainer.scrollLeft = scrollLeft - walk;
+            });
+
+            menuContainer.addEventListener("mouseup", () => {
+                isDragging = false;
+                menuContainer.style.cursor = "grab";
+                menuContainer.style.scrollBehavior = "smooth"; 
+                checkScroll();
+            });
+
+            menuContainer.addEventListener("mouseleave", () => {
+                isDragging = false;
+                menuContainer.style.cursor = "grab";
+            });
+
+        
+            checkScroll();
+        });
+        function showMenu(type) {
+    const menuList = document.getElementById("menu-list");
+    menuList.innerHTML = ""; 
+
+    if (!menu[type]) { 
+        console.error(`Menu type '${type}' không tồn tại`); 
+        return; 
+    }
+
+    document.querySelectorAll(".menu-container ul li a").forEach(item => {
+        item.classList.remove("active");
+    });
+
+    const selectedItem = document.querySelector(`.menu-container ul li a[onclick="showMenu('${type}')"]`);
+    if (selectedItem) {
+        selectedItem.classList.add("active");
+    }
+
+    menu[type].forEach(item => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        if (item.isTitle) {
+            li.className = "menu-title"; 
+            li.textContent = item.text;
+        } else {
+            a.textContent = item.text;
+            a.href = item.link;
+            li.appendChild(a);
+        }
+        menuList.appendChild(li);
+    });
+}
+
+
+    </script>
+</body>
+</html>
