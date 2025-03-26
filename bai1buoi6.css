@@ -1,0 +1,82 @@
+
+body {
+    background-color: #1a1a2e;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-left: 50px;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.album-container {
+    display: flex;
+    gap: 15px;
+}
+.album {
+    position: relative;
+    width: 150px;
+    cursor: pointer;
+    text-align: center;
+}
+.album img {
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    display: block;
+}
+.album-content {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+}
+.overlay i {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.overlay i:hover {
+    color: red;
+}
+.album-content:hover .overlay {
+    opacity: 1;
+}
+.album-content:hover img {
+    filter: grayscale(50%);
+    transform: scale(1.1);
+}
+.album-title, .artist {
+    margin-top: 5px;
+    color: white;
+}
+.artist {
+    font-size: 12px;
+    color: #bbb;
+}
+
+.album:hover img,
+.album:hover .overlay {
+    transform: scale(1.1); 
+}
