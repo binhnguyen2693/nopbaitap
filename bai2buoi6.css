@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #000;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    position: relative;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.menu li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown a {
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.anh {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/12/home_slider_2.png') top/contain no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.anh h1 {
+    font-size: 50px;
+    margin: 0;
+    color: white;
+}
+
+.anh button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+
+.tieude-container {
+background-color: white;
+text-align: center;
+padding: 40px 0;
+}
+
+.tieude{
+color: black;
+font-size: 24px;
+font-weight: bold;
+margin: 0;
+}
+
+.album-container {
+    display: flex;
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+}
+
+.album {
+    position: relative;
+    width: 150px;
+    cursor: pointer;
+}
+
+.album-box {
+    position: relative;
+}
+
+.album-box img {
+    width: 100%;
+    border-radius: 8px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.album-box img.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.album-box:hover img.default-img {
+    opacity: 0;
+}
+
+.album-box:hover img.hover-img {
+    opacity: 1;
+}
+
+.album-title, .artist {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.album-title {
+    color: black;
+    text-align: left;
+}
+
+.artist {
+    font-size: 12px;
+    color: #777;
+}
+ .album-box:hover img.default-img {
+    opacity: 0;
+}
+
+.album-box:hover img.hover-img {
+    opacity: 1;
+}
+
+.album-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.album-title {
+    color: black;
+    font-weight: bold;
+}
+
+.artist {
+    font-size: 12px;
+    color: #777;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.add-to-cart {
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    
+}
+
+.album-box:hover .artist {
+    opacity: 0;
+}
+
+.album-box:hover .add-to-cart {
+    opacity: 1;
+}
