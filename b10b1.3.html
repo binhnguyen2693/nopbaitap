@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>BUONNGU</h2>
+
+    <p>MUONNGU</p>
+    <p class="intro">Hello World!</p>
+    <p class="intro">
+      ngu24/24 <b>getElementsByClassName</b> method.
+    </p>
+
+    <p id="demo"></p>
+    <a href="baitapbuoi10.html">Quay lại trang chủ</a>
+    <script>
+      const x = document.getElementsByClassName("intro");
+      document.getElementById("demo").innerHTML =
+        'The first paragraph (index 0) with class="intro" is: ' +
+        x[0].innerHTML;
+    </script>
+  </body>
+</html>
